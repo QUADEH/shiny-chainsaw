@@ -1,9 +1,9 @@
-function generateNumberList() {
-  let ol = document.getElementById("numberList");
-  
-  for (let i = 1; i <= 377; i++) {
-    let li = document.createElement("li");
-    li.textContent = i;
-    ol.appendChild(li);
+document.addEventListener("DOMContentLoaded", function() {
+  let numberList = document.querySelector("#number-list");
+
+  for (var i = 1; i <= 377; i++) {
+    var listItem = document.createElement("li");
+    listItem.textContent = i;
+    numberList.appendChild(listItem);
   }
-}
+});
